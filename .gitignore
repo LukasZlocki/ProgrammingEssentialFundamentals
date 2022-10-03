@@ -20,3 +20,14 @@ Exceptions/bin/
 Exceptions/obj/
 Exceptions.sln
 
+AccessModifiers/bin/
+AccessModifiers/obj/
+AccessModifiers.sln
+
+AccessModifiersAnotherAssembly/bin/
+AccessModifiersAnotherAssembly/obj/
+AccessModifiersAnotherAssembly.sln
+
+AccessModifiersAnotherClass/bin/
+AccessModifiersAnotherClass/obj/
+AccessModifiersAnotherClass.sln
