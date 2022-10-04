@@ -12,6 +12,14 @@
 
     public class TestClassChild : TestClass
     {
+        public TestClassChild()
+        {
+            Console.WriteLine(base.PublicField);
+            Console.WriteLine(base.InternalField);
+            Console.WriteLine(base.ProtectedField);
+            Console.WriteLine(base.ProtectedInternalField);
+            Console.WriteLine(base.PrivateProtectedField);
+        }
 
     }
 
