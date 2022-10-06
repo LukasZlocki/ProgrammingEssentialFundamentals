@@ -35,3 +35,7 @@ AccessModifiersAnotherClass.sln
 ParamsKeyword/bin/
 ParamsKeyword/obj/
 ParamsKeyword/.sln
+
+ClassVsStruct/bin/
+ClassVsStruct/obj/
+ClassVsStruct/.sln
