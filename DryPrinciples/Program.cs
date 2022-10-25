@@ -16,12 +16,11 @@ class Order
     public Order(string customerId, string productId)
     {
         CustomerId = customerId;
-        ProductId = productId;
+        ProductId = ProductId;
     }
 }
 static class Commit
 {
-
     // Solution:
     public static void Validate(string idToBeValidated, string propertyName)
     {
@@ -30,4 +29,33 @@ static class Commit
             throw new Exception($"The {propertyName} must not be empty");
         };
     }
+
+    /* // duplicate function of methods DRY(!)
+    public void CommitOrder(Order order){
+        if (string.IsNullOrEmpty(order.CustomerId)){
+            throw new Exception($"The CustomerId must not be empty");
+        }
+        if (string.IsNullOrEmpty(order.ProductId)){
+            throw new Exception($"The ProductId must not be empty");
+        }  
+    }
+    */
+}
+
+// Example #1:
+class OnlineStore 
+{
+    public const int DaysForReturn = 30;
+
+public DateTime ReturnDateDeadline(DateTime purchaseDate)
+{
+    // return purchaseDate.AddDays(30); // <<- 1st place were we define 30 days
+    return purchaseDate.AddDays(DaysForReturn); 
+}
+
+public bool IsAfterPossibleReturnDate(DateTime purchaseDate){
+    // return (DateTime.Now - purchaseDate).TotalDays > 30; // <<- 2nd place were we define 30 days
+    return (DateTime.Now - purchaseDate).TotalDays > DaysForReturn;
+}
+
 }
