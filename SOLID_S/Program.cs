@@ -1,6 +1,12 @@
 ﻿/* Section: 46 "S in SOLID - single responsibility"
 */
 
+// Advantages:
+//  sdmaller, more cohesive and more readable classes
+//  reusable code
+//  easy to maintain of the code
+//  faster development and less bugs
+
 // In example below class PeopleInformationPrinter has many functions
 // like reading from database, converting data from database to text, writing text to file
 // this need to be splited into class responsible only for reading from database, converting strings, writing to file.
