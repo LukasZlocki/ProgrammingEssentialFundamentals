@@ -7,9 +7,9 @@
 //  easy to maintain of the code
 //  faster development and less bugs
 
-// In example below class PeopleInformationPrinter has many functions
-// like reading from database, converting data from database to text, writing text to file
-// this need to be splited into class responsible only for reading from database, converting strings, writing to file.
+// In example below class PeopleInformationPrinter has many responsibilities.
+// reading from database, converting data from database to text, writing text to file.
+// This need to be splitted into class responsible only for reading from database, converting strings, writing to file.
 
 public class PeopleInformationPrinter
 {
