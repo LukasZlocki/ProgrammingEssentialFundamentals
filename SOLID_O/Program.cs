@@ -1,5 +1,9 @@
-﻿/* Section: 47 "O in SOLID - Example1"
-*/
+﻿// Section: 47 "O in SOLID - Example1"
+// Open / clode principle
+// Opened: it can be xtended so new functionality can be added.
+// Closed: we shouldn't be forced to modify the existing code to introduce this piece of functionality
+// Def: Modules, classes and functions should be opened for extension but closed for modification.
+
 
 
 // After refactor the code 
