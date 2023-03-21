@@ -12,7 +12,7 @@ namespace BankAccount.Models
             string _userMessage;
             if (Balance - amount >= 0) {
                 Balance = Balance - amount;
-                _userMessage = "Succes. Your new account balance : " + ToString(Balance);
+                _userMessage = "Succes. Your new account balance : " + Balance.ToString();
             }
             else {
                 _userMessage = "No sufficient funds.";
@@ -25,7 +25,7 @@ namespace BankAccount.Models
         }
 
         public string CheckBalance() {
-            return "Your account balance :" + ToString(Balance);
+            return "Your account balance :" + Balance.ToString();
         }
     }
 }
